@@ -41,6 +41,8 @@ class Student:
         else:
             if self.grade_av() < other.grade_av():
                 print(f'У {other.surname} {other.name} средний бал выше')
+            elif self.grade_av() == other.grade_av():
+                print(f'У {other.surname} {other.name} и {self.surname} {self.name} средний бал одинаков')
             else:
                 print(f'У {self.surname} {self.name} средний бал выше')
 
@@ -50,6 +52,8 @@ class Student:
         else:
             if self.grade_av() > other.grade_av():
                 print(f'У {self.surname} {self.name} средний бал выше')
+            elif self.grade_av() == other.grade_av():
+                print(f'У {other.surname} {other.name} и {self.surname} {self.name} средний бал одинаков')
             else:
                 print(f'У {other.surname} {other.name} средний бал выше')
 
@@ -114,6 +118,8 @@ class Lecturer(Mentor):
         else:
             if self.grade_av() < other.grade_av():
                 print(f'У {other.surname} {other.name} средний бал выше')
+            elif self.grade_av() == other.grade_av():
+                print(f'У {other.surname} {other.name} и {self.surname} {self.name} средний бал одинаков')
             else:
                 print(f'У {self.surname} {self.name} средний бал выше')
 
@@ -123,6 +129,8 @@ class Lecturer(Mentor):
         else:
             if self.grade_av() > other.grade_av():
                 print(f'У {self.surname} {self.name} средний бал выше')
+            elif self.grade_av() == other.grade_av():
+                print(f'У {other.surname} {other.name} и {self.surname} {self.name} средний бал одинаков')
             else:
                 print(f'У {other.surname} {other.name} средний бал выше')
 
